@@ -1,0 +1,651 @@
+{
+  "config": {
+    "T0_ps": 5000.0,
+    "L": 5,
+    "N0": 5000,
+    "eta_ps": 1.0,
+    "dmax_ps": 1000.0,
+    "min_slot_gap": 1,
+    "pd_bw_GHz": 1.0,
+    "tha_bw_GHz": 1.0,
+    "t_acq_ps": 50.0,
+    "f_avg_GHz": 1.0,
+    "enob": 8.0,
+    "nbits": 10,
+    "v_ramp_ps_per_s": 1000.0
+  },
+  "params": {
+    "n0": 5000,
+    "K": 2,
+    "nC": 48,
+    "n_f0": 24,
+    "n_k": 8,
+    "f_lo_ghz": 20.0,
+    "f_hi_ghz": 120.0,
+    "bw_lo_ghz": 10.0,
+    "bw_hi_ghz": 30.0,
+    "W": 32,
+    "period": 32,
+    "signal_pri_ticks": 20,
+    "pulse_width_ns": 16.0,
+    "sir": -40.0,
+    "sir_lo": null,
+    "train_fixed_eval": false,
+    "jam_pos_weight": null,
+    "eval_snr": -10.0,
+    "snr_lo": -6.0,
+    "snr_hi": 8.0,
+    "burst_role": "none",
+    "cap": "large",
+    "iters": 0,
+    "model_in": "outputs/streaming_wideband_nuaa_n5000_wb_tau16_pri320_t20_b16_nosp_glrt.pt",
+    "model_out": null,
+    "batch": 24,
+    "lr": 0.0015,
+    "progress_every": 25,
+    "train_steps_list": [
+      4,
+      8,
+      12,
+      16
+    ],
+    "window_periods": 40,
+    "ticks": 2,
+    "evo_hold_ticks": null,
+    "hold_coeffs": true,
+    "mt_mode": "belief_bangbang",
+    "no_scene_prior": true,
+    "train_scene_prior": false,
+    "prior_coef_ema": 0.0,
+    "prior_calibration_windows": 0,
+    "prior_online_gain": 0.1,
+    "fixed_window_coefficients": false,
+    "with_oracle_null": true,
+    "methods": [
+      "fourier_somp",
+      "chirplet_somp",
+      "prior_bangbang"
+    ],
+    "control_dt_ms": 100.0,
+    "trials": 8,
+    "target_nmse_db": -10.0,
+    "seed": 0,
+    "tag": "table2_fig3slice_baselines",
+    "quick": false
+  },
+  "mt_n_params": 487857,
+  "methods": {
+    "fourier_somp": {
+      "final_f1_mean": 0.0,
+      "final_nmse_med_db": -1.4206717922596077e-07,
+      "final_mf_med_db": -83.30835305108685,
+      "hit_rate": 0.0,
+      "median_time_to_target_s": null,
+      "tau_movement_ps_mean": 0.0,
+      "strobe_feasible_rate_mean": 0.525,
+      "tick_curve": {
+        "f1_med": [
+          0.0,
+          0.0
+        ],
+        "f1_p25": [
+          0.0,
+          0.0
+        ],
+        "f1_p75": [
+          0.0,
+          0.0
+        ],
+        "nmse_med": [
+          -4.747567209230066e-07,
+          -1.4206717922596077e-07
+        ],
+        "nmse_p25": [
+          -1.287257050289828e-06,
+          -1.0572534235900631e-05
+        ],
+        "nmse_p75": [
+          -4.0386494745689585e-08,
+          -4.160580218569754e-08
+        ],
+        "mf_med": [
+          -80.19959174836701,
+          -83.30835305108685
+        ],
+        "mf_p25": [
+          -86.85940716040083,
+          -89.85597986422869
+        ],
+        "mf_p75": [
+          -75.89971181281207,
+          -76.63396991275883
+        ],
+        "belief_mass_med": [
+          0.0004166666666666667,
+          0.0004166666666666667
+        ],
+        "belief_mass_p25": [
+          0.0004166666666666667,
+          0.0004166666666666667
+        ],
+        "belief_mass_p75": [
+          0.0004166666666666667,
+          0.0004166666666666667
+        ],
+        "evidence_events_med": [
+          0.0,
+          0.0
+        ],
+        "evidence_events_p25": [
+          0.0,
+          0.0
+        ],
+        "evidence_events_p75": [
+          0.0,
+          0.0
+        ],
+        "jammer_correct_med": [
+          0.0,
+          0.0
+        ],
+        "jammer_correct_p25": [
+          0.0,
+          0.0
+        ],
+        "jammer_correct_p75": [
+          0.0,
+          0.0
+        ],
+        "jammer_confidence_med": [
+          0.0,
+          0.0
+        ],
+        "jammer_confidence_p25": [
+          0.0,
+          0.0
+        ],
+        "jammer_confidence_p75": [
+          0.0,
+          0.0
+        ],
+        "nmse_best_med": [
+          -4.747567209230066e-07,
+          -8.285473158123198e-07
+        ]
+      },
+      "example_curve": {
+        "f1": [
+          0.0,
+          0.0
+        ],
+        "nmse": [
+          -5.021595146110453e-08,
+          -1.165127134016447e-07
+        ],
+        "mf": [
+          -77.54624015712352,
+          -74.94023251694836
+        ],
+        "belief_mass": [
+          0.0004166666666666667,
+          0.0004166666666666667
+        ],
+        "evidence_events": [
+          0,
+          0
+        ],
+        "jammer_correct": [
+          0.0,
+          0.0
+        ],
+        "jammer_confidence": [
+          0.0,
+          0.0
+        ]
+      },
+      "example_ledger": {
+        "n_periods": 80,
+        "n_events": 200,
+        "T_acq_s": 4e-07,
+        "tau_movement_ps": 0.0,
+        "adaptive_rate": 0.0,
+        "strobe_t_cnv_min_ps": 0.0,
+        "strobe_t_cnv_med_ps": 48.0,
+        "strobe_feasible_rate": 0.4,
+        "wall_time_s": 0.2,
+        "observation_time_s": 4e-07,
+        "events_per_window": 200,
+        "materialized_events": 400
+      }
+    },
+    "chirplet_somp": {
+      "final_f1_mean": 0.4374999999993437,
+      "final_nmse_med_db": -0.0005907938950039472,
+      "final_mf_med_db": -120.87883650280004,
+      "hit_rate": 0.0,
+      "median_time_to_target_s": null,
+      "tau_movement_ps_mean": 0.0,
+      "strobe_feasible_rate_mean": 0.375,
+      "tick_curve": {
+        "f1_med": [
+          0.49999999999924993,
+          0.49999999999924993
+        ],
+        "f1_p25": [
+          0.49999999999924993,
+          0.49999999999924993
+        ],
+        "f1_p75": [
+          0.49999999999924993,
+          0.49999999999924993
+        ],
+        "nmse_med": [
+          -0.00046325082953788425,
+          -0.0005907938950039472
+        ],
+        "nmse_p25": [
+          -0.0007094494902954258,
+          -0.0007713546570501436
+        ],
+        "nmse_p75": [
+          -0.00024385608552531627,
+          -0.0002015587737805732
+        ],
+        "mf_med": [
+          -122.4511830139464,
+          -120.87883650280004
+        ],
+        "mf_p25": [
+          -128.35547557041758,
+          -123.71225617164782
+        ],
+        "mf_p75": [
+          -114.08883715748425,
+          -112.95275708170036
+        ],
+        "belief_mass_med": [
+          0.0004166666666666667,
+          0.0004166666666666667
+        ],
+        "belief_mass_p25": [
+          0.0004166666666666667,
+          0.0004166666666666667
+        ],
+        "belief_mass_p75": [
+          0.0004166666666666667,
+          0.0004166666666666667
+        ],
+        "evidence_events_med": [
+          0.0,
+          0.0
+        ],
+        "evidence_events_p25": [
+          0.0,
+          0.0
+        ],
+        "evidence_events_p75": [
+          0.0,
+          0.0
+        ],
+        "jammer_correct_med": [
+          0.0,
+          0.0
+        ],
+        "jammer_correct_p25": [
+          0.0,
+          0.0
+        ],
+        "jammer_correct_p75": [
+          0.0,
+          0.0
+        ],
+        "jammer_confidence_med": [
+          0.0,
+          0.0
+        ],
+        "jammer_confidence_p25": [
+          0.0,
+          0.0
+        ],
+        "jammer_confidence_p75": [
+          0.0,
+          0.0
+        ],
+        "nmse_best_med": [
+          -0.00046325082953788425,
+          -0.0006346282423670504
+        ]
+      },
+      "example_curve": {
+        "f1": [
+          0.49999999999924993,
+          0.49999999999924993
+        ],
+        "nmse": [
+          -0.0007066499802513926,
+          -0.0015418658207777298
+        ],
+        "mf": [
+          -106.52445881898905,
+          -103.25463864357116
+        ],
+        "belief_mass": [
+          0.0004166666666666667,
+          0.0004166666666666667
+        ],
+        "evidence_events": [
+          0,
+          0
+        ],
+        "jammer_correct": [
+          0.0,
+          0.0
+        ],
+        "jammer_confidence": [
+          0.0,
+          0.0
+        ]
+      },
+      "example_ledger": {
+        "n_periods": 80,
+        "n_events": 200,
+        "T_acq_s": 4e-07,
+        "tau_movement_ps": 0.0,
+        "adaptive_rate": 0.0,
+        "strobe_t_cnv_min_ps": 0.0,
+        "strobe_t_cnv_med_ps": 0.0,
+        "strobe_feasible_rate": 0.2,
+        "wall_time_s": 0.2,
+        "observation_time_s": 4e-07,
+        "events_per_window": 200,
+        "materialized_events": 400
+      }
+    },
+    "prior_bangbang": {
+      "final_f1_mean": 0.4374999999993437,
+      "final_nmse_med_db": -0.0003730778705340359,
+      "final_mf_med_db": -122.16329243196856,
+      "hit_rate": 0.0,
+      "median_time_to_target_s": null,
+      "tau_movement_ps_mean": 910.625,
+      "strobe_feasible_rate_mean": 0.35000000000000003,
+      "tick_curve": {
+        "f1_med": [
+          0.49999999999924993,
+          0.49999999999924993
+        ],
+        "f1_p25": [
+          0.37499999999943745,
+          0.49999999999924993
+        ],
+        "f1_p75": [
+          0.49999999999924993,
+          0.49999999999924993
+        ],
+        "nmse_med": [
+          -0.0002916413301307739,
+          -0.0003730778705340359
+        ],
+        "nmse_p25": [
+          -0.000384238357337487,
+          -0.0009333391565594205
+        ],
+        "nmse_p75": [
+          -0.00021764389971906637,
+          -0.00022834163891972292
+        ],
+        "mf_med": [
+          -122.4291639259876,
+          -122.16329243196856
+        ],
+        "mf_p25": [
+          -127.47852317329881,
+          -124.15518723936415
+        ],
+        "mf_p75": [
+          -119.18392536860432,
+          -113.55123542942357
+        ],
+        "belief_mass_med": [
+          0.13400503121619214,
+          0.3823495905343287
+        ],
+        "belief_mass_p25": [
+          0.12766616586140495,
+          0.3598954527179896
+        ],
+        "belief_mass_p75": [
+          0.13833216828637043,
+          0.3970945829534715
+        ],
+        "evidence_events_med": [
+          0.0,
+          0.0
+        ],
+        "evidence_events_p25": [
+          0.0,
+          0.0
+        ],
+        "evidence_events_p75": [
+          0.0,
+          0.0
+        ],
+        "jammer_correct_med": [
+          0.0,
+          0.0
+        ],
+        "jammer_correct_p25": [
+          0.0,
+          0.0
+        ],
+        "jammer_correct_p75": [
+          0.0,
+          0.0
+        ],
+        "jammer_confidence_med": [
+          0.0,
+          0.0
+        ],
+        "jammer_confidence_p25": [
+          0.0,
+          0.0
+        ],
+        "jammer_confidence_p75": [
+          0.0,
+          0.0
+        ],
+        "nmse_best_med": [
+          -0.0002916413301307739,
+          -0.0003882205294666809
+        ]
+      },
+      "example_curve": {
+        "f1": [
+          0.0,
+          0.49999999999924993
+        ],
+        "nmse": [
+          -5.9304441334431345e-06,
+          -0.0008857029526185169
+        ],
+        "mf": [
+          -127.38965569327715,
+          -105.60921588092864
+        ],
+        "belief_mass": [
+          0.1333101574695049,
+          0.34402091367272736
+        ],
+        "evidence_events": [
+          0,
+          0
+        ],
+        "jammer_correct": [
+          0.0,
+          0.0
+        ],
+        "jammer_confidence": [
+          0.0,
+          0.0
+        ]
+      },
+      "example_ledger": {
+        "n_periods": 80,
+        "n_events": 200,
+        "T_acq_s": 4e-07,
+        "tau_movement_ps": 838.0,
+        "adaptive_rate": 1.0,
+        "strobe_t_cnv_min_ps": 0.0,
+        "strobe_t_cnv_med_ps": 146.0,
+        "strobe_feasible_rate": 0.2,
+        "wall_time_s": 0.2,
+        "observation_time_s": 4e-07,
+        "events_per_window": 200,
+        "materialized_events": 400
+      }
+    },
+    "nullsomp_oracle": {
+      "final_f1_mean": 0.6874999999991562,
+      "final_nmse_med_db": -4.827308565090089,
+      "final_mf_med_db": -1.132799263093768,
+      "hit_rate": 0.5,
+      "median_time_to_target_s": 0.15000000000000002,
+      "tau_movement_ps_mean": 901.625,
+      "strobe_feasible_rate_mean": 0.5,
+      "tick_curve": {
+        "f1_med": [
+          0.49999999999924993,
+          0.49999999999924993
+        ],
+        "f1_p25": [
+          0.49999999999924993,
+          0.49999999999924993
+        ],
+        "f1_p75": [
+          0.9999999999989999,
+          0.9999999999989999
+        ],
+        "nmse_med": [
+          -4.841463126659562,
+          -4.827308565090089
+        ],
+        "nmse_p25": [
+          -10.060686903723902,
+          -14.826500406258566
+        ],
+        "nmse_p75": [
+          -0.5332098924106304,
+          -3.18187786512838
+        ],
+        "mf_med": [
+          -0.2831566690101588,
+          -1.132799263093768
+        ],
+        "mf_p25": [
+          -4.60239485134499,
+          -4.508818104327425
+        ],
+        "mf_p75": [
+          2.6990635142220603,
+          4.438999786048534
+        ],
+        "belief_mass_med": [
+          0.10453107747761588,
+          0.1955024977586097
+        ],
+        "belief_mass_p25": [
+          0.09401724680630545,
+          0.1899903998339921
+        ],
+        "belief_mass_p75": [
+          0.11351458222092572,
+          0.22528220710177738
+        ],
+        "evidence_events_med": [
+          0.0,
+          0.0
+        ],
+        "evidence_events_p25": [
+          0.0,
+          0.0
+        ],
+        "evidence_events_p75": [
+          0.0,
+          0.0
+        ],
+        "jammer_correct_med": [
+          0.0,
+          0.0
+        ],
+        "jammer_correct_p25": [
+          0.0,
+          0.0
+        ],
+        "jammer_correct_p75": [
+          0.0,
+          0.0
+        ],
+        "jammer_confidence_med": [
+          0.0,
+          0.0
+        ],
+        "jammer_confidence_p25": [
+          0.0,
+          0.0
+        ],
+        "jammer_confidence_p75": [
+          0.0,
+          0.0
+        ],
+        "nmse_best_med": [
+          -4.841463126659562,
+          -10.940990763155625
+        ]
+      },
+      "example_curve": {
+        "f1": [
+          0.9999999999989999,
+          0.49999999999924993
+        ],
+        "nmse": [
+          -8.265774614417962,
+          -2.2233929784443602
+        ],
+        "mf": [
+          2.4302296472419496,
+          -6.215064589254283
+        ],
+        "belief_mass": [
+          0.10952643134566015,
+          0.19293659593890217
+        ],
+        "evidence_events": [
+          0,
+          0
+        ],
+        "jammer_correct": [
+          0.0,
+          0.0
+        ],
+        "jammer_confidence": [
+          0.0,
+          0.0
+        ]
+      },
+      "example_ledger": {
+        "n_periods": 80,
+        "n_events": 200,
+        "T_acq_s": 4e-07,
+        "tau_movement_ps": 965.0,
+        "adaptive_rate": 1.0,
+        "strobe_t_cnv_min_ps": 0.0,
+        "strobe_t_cnv_med_ps": 721.0,
+        "strobe_feasible_rate": 0.8,
+        "wall_time_s": 0.2,
+        "observation_time_s": 4e-07,
+        "events_per_window": 200,
+        "materialized_events": 400
+      }
+    }
+  }
+}

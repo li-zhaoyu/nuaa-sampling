@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.python-version
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Local experiment scratch (keep curated outputs/)
+outputs/.mplcache/
+logs/
+*.log
+
+# Large local caches
+.mplcache/
+.cache/
